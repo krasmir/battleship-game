@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship Game</title>
+    <!-- favicon made by hand on https://www.favicon.cc/ -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/board.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+  </head>
+  <body>
+    <div id="layout" class="layout">
+      <div id="game-info">
+        <img
+          src="images/battleship_logo.png"
+          alt="Battleship Game Logo"
+          class="logo"
+        />
+      </div>
+      <div id="player-wrapper" class="board-wrapper">
+        <div id="player-board-numbers" class="numbers"></div>
+        <div id="player-board-letters" class="letters"></div>
+        <div id="player" class="board"></div>
+      </div>
+      <div id="enemy-wrapper" class="board-wrapper">
+        <div id="enemy-board-numbers" class="numbers"></div>
+        <div id="enemy-board-letters" class="letters"></div>
+        <div id="enemy" class="board"></div>
+      </div>
+      <div id="buttons">
+        <button id="place-ships">Change ships placement</button>
+        <button id="start-game">Start game</button>
+        <button id="new-game">New game</button>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
